@@ -73,7 +73,7 @@ if __name__ == "__main__":
     print("=" * 70)
     for question in [
         "Read notice.html and tell me the total fee for CS101 and AI202 after the merit scholarship.",
-        "Read notice.html and tell me the fee for CS101.",          # file does not exist
+        "Read fees.html and tell me the fee for CS101."  ,      # file does not exist
         "Read big.html and tell me how many students are listed.",
     ]:
         print("\nQ:", question)

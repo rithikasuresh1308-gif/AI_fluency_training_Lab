@@ -60,7 +60,8 @@ if __name__ == "__main__":
     print("=" * 70)
     print("MY AGENT (no guards)")
     print("=" * 70)
-    question = ("Read notice.html and tell me the total fee for CS101 and AI202 "
-                "after the merit scholarship.")
+
+    question = "Read fees.html and tell me the fee for CS101."
+
     print("Q:", question)
     print("A:", agent(question))
