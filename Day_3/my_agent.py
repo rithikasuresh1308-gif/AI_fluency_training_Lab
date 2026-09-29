@@ -2,8 +2,8 @@
 import json
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Day_1')))
-from config import client, MODEL, banner
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Day1_lab')))
+from config import client, MODEL
 from my_tools import TOOLS, TOOL_FUNCTIONS
 
 SYSTEM_PROMPT = (
@@ -57,8 +57,10 @@ def agent(question, max_steps=6, verbose=True):
     return "Stopped: maximum steps reached without a final answer."
 
 if __name__ == "__main__":
-    banner("MY AGENT (no guards)")
-    question = ("Read Day_3/notice.html and tell me the total fee for CS101 and AI202 "
+    print("=" * 70)
+    print("MY AGENT (no guards)")
+    print("=" * 70)
+    question = ("Read notice.html and tell me the total fee for CS101 and AI202 "
                 "after the merit scholarship.")
     print("Q:", question)
     print("A:", agent(question))
